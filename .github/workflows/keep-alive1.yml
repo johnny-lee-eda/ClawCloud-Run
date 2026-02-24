@@ -1,6 +1,6 @@
 name   名字: ClawCloud 自动登录保活GET
 
-on   :   在:
+on   在   :   在:
   schedule   时间表:   时间表:
     - cron: '0 1 */5 * *'  # UTC 1:00，每5天运行
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs   工作:   工作:
 
       - name   名字: 设置 Python
         uses   使用: actions/setup-python@v5
-        with   :   与:
+        with   与   :   与:
           python-version   python版本: '3.11'
 
       - name   名字: 安装依赖
@@ -29,7 +29,7 @@ jobs   工作:   工作:
         env:
           GH_USERNAMEGH_USERNAME: ${{secrets。GH_USERNAME1}}: ${{ secrets.GH_USERNAME1 }}
           GH_PASSWORDGH_PASSWORD: ${{secrets。GH_PASSWORD1}}: ${{ secrets.GH_PASSWORD1 }}
-          GH_SESSION: ${{ secrets.GH_SESSION }}GH_SESSION: ${{秘密。GH_SESSION}}
+          GH_SESSION: ${{ secrets.GH_SESSION1 }}GH_SESSION: ${{秘密。GH_SESSION1}}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}TG_BOT_TOKEN: ${{secrets。TG_BOT_TOKEN}}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}TG_CHAT_ID: ${{secrets。TG_CHAT_ID}}
           REPO_TOKEN: ${{ secrets.REPO_TOKEN1 }}REPO_TOKEN: ${{secrets。REPO_TOKEN1}}
